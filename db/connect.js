@@ -1,9 +1,8 @@
 const mongoose = require('mongoose')
-const connectionString = "mongodb+srv://TaskAppUser:lK1UWMU5WqGkACHk@cluster0.u4ul5z1.mongodb.net/taskManagerDatabase?retryWrites=true&w=majority"
 
 
 const connectDB = (url) =>{
-    return mongoose.connect(connectionString, {
+    return mongoose.connect(url, {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
